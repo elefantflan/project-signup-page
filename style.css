@@ -1,3 +1,10 @@
+@font-face{
+    font-family: 'nordic';
+    src:url('font/Norse-Bold.otf') format('opentype');
+    font-weight:normal;
+    font-style:normal;
+}
+
 body{
     font-family: sans-serif;
     color:#2c2c2c;
@@ -27,7 +34,28 @@ body{
     height:100%;
 }
 
-.contact{
+.logo,
+.odin{
+    height:100px;
+    z-index:1;
+}
+
+.logo{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position:absolute;
+    top:20vh;
+    width:100%;
+    padding:10px;
+    background:rgb(0,0,0,69%);
+
+    color:white;
+    font-size:4rem;
+    font-family:'nordic', sans-serif;
+}
+
+.main{
     flex-wrap:wrap;
     width:70%;
     background:beige;
@@ -72,4 +100,20 @@ button{
     background:#596D48;
     border-radius: 10px;
     box-shadow: 1px 1px 3px #696969;
+}
+
+
+
+.name,
+.contact,
+.password{
+    font-size: .9rem;
+    display:flex;
+    margin-bottom:10px;
+    gap:10px;
+}
+
+label,
+input{
+    display: block;
 }
