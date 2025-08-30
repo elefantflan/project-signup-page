@@ -9,37 +9,49 @@
 </head>
 <body>
     <div class="page-wrap">
-        <div class="brand">
+        <div class="side">
             <img class="bg-img" src="img/leaves.jpg">
-            <img class="logo" src="img/odin-lined.png">
         </div>
-        <div class="info">
-            <form action="/submission">
-                <div>
-                    <label for="first">First Name:</label>
+        <div class="contact">
+            <form action="/submission" method="post">
+                <div class="text">
+                     <p>
+                    This is not a real online service! You know you need something
+                    like this in your life to help you realize your deepest dreams.
+                    Sign up <span class=italics>now</span> to get started.
+                    </p>
+                    <p>
+                    You <span class=italics>know</span> you want to.
+                    </p>
                 </div>
-                <div>
-                    <input type="text" id="first" name="first-name" required>
+                <div class="info-box">
+                    <h3>Let's Do This!</h3>
+                    <div>
+                        <label for="first">First Name:</label>
+                    </div>
+                    <div>
+                        <input type="text" id="first" name="first-name" required>
+                    </div>
+                    <div>
+                        <label for="last">Last Name:</label>
+                    </div>
+                    <div>
+                        <input type="text" id="last" name="last-name" required>
+                    </div>
+                    <div>
+                        <label for="email">Email:</label>
+                    </div>
+                    <div>
+                        <input type="email" id="email" name="user-email" required placeholder="user@example.com">
+                    </div>
+                    <div>
+                        <label for="tel">Phone Number:</label>
+                    </div>
+                    <div>
+                        <input type="tel" id="tel" name="user-phone" placeholder="000-000-0000">
+                    </div>
                 </div>
-                <div>
-                    <label for="last">Last Name:</label>
-                </div>
-                <div>
-                    <input type="text" id="last" name="last-name" required>
-                </div>
-                <div>
-                    <label for="email">Email:</label>
-                </div>
-                <div>
-                    <input type="email" id="email" name="user-email" required placeholder="user@example.com">
-                </div>
-                <div>
-                    <label for="tel">Phone Number:</label>
-                </div>
-                <div>
-                    <input type="tel" id="tel" name="user-phone" placeholder="000-000-0000">
-                </div>
-                <div>
+                <div class="submit">
                     <button type="submit">Sign Up</button>
                 </div>
             </form>
